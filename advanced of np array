@@ -1,0 +1,33 @@
+import numpy as np
+a = np.array([1, 2, 3])
+b = np.array([[10], [20], [30]])
+print("Broadcasting:\n", a + b)
+
+arr = np.array([1, 2, 3, 4])
+print("Vectorization (square):", arr ** 2)
+
+data = np.array([10, 20, 30, 40, 50])
+indices = [0, 2, 4]
+print("Fancy Indexing:", data[indices])
+
+matrix = np.arange(12).reshape(3, 4)
+print("Reshaped Matrix:\n", matrix)
+
+a1 = np.array([1, 2])
+a2 = np.array([3, 4])
+print("Vertical Stack:\n", np.vstack((a1, a2)))
+print("Horizontal Stack:\n", np.hstack((a1, a2)))
+
+arr_split = np.array([1, 2, 3, 4, 5, 6])
+print("Split:", np.array_split(arr_split, 3))
+
+mat1 = np.array([[1, 2], [3, 4]])
+mat2 = np.array([[5, 6], [7, 8]])
+print("Matrix Multiplication:\n", np.dot(mat1, mat2))
+
+arr_stats = np.array([1, 2, 3, 4, 5])
+print("Mean:", np.mean(arr_stats))
+print("Standard Deviation:", np.std(arr_stats))
+
+rand_arr = np.random.rand(3, 3)
+print("Random Array:\n", rand_arr)
